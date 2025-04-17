@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Photo 1",
+    "thumbnail": "/images/optimized/DSC01994.avif",
+    "full": "/images/original/DSC01994.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Photo 2",
+    "thumbnail": "/images/optimized/DSC02958.avif",
+    "full": "/images/original/DSC02958.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Photo 3",
+    "thumbnail": "/images/optimized/DSC02279.avif",
+    "full": "/images/original/DSC02279.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Photo 4",
+    "thumbnail": "/images/optimized/DSC03232.avif",
+    "full": "/images/original/DSC03232.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Photo 5",
+    "thumbnail": "/images/optimized/DSC03333.avif",
+    "full": "/images/original/DSC03333.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Photo 6",
+    "thumbnail": "/images/optimized/DSC03294.avif",
+    "full": "/images/original/DSC03294.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Photo 7",
+    "thumbnail": "/images/optimized/DSC02003.avif",
+    "full": "/images/original/DSC02003.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Photo 8",
+    "thumbnail": "/images/optimized/DSC02283.avif",
+    "full": "/images/original/DSC02283.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Photo 9",
+    "thumbnail": "/images/optimized/DSC03348.avif",
+    "full": "/images/original/DSC03348.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Photo 10",
+    "thumbnail": "/images/optimized/DSC02117.avif",
+    "full": "/images/original/DSC02117.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Photo 11",
+    "thumbnail": "/images/optimized/DSC03265.avif",
+    "full": "/images/original/DSC03265.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Photo 12",
+    "thumbnail": "/images/optimized/DSC02995.avif",
+    "full": "/images/original/DSC02995.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Photo 14",
+    "thumbnail": "/images/optimized/DSC03416.avif",
+    "full": "/images/original/DSC03416.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Photo 15",
+    "thumbnail": "/images/optimized/DSC02035.avif",
+    "full": "/images/original/DSC02035.jpg"
+  }
+]
