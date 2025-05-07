@@ -1,1 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
 @import "tailwindcss";
+
+body {
+  font-family: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+}

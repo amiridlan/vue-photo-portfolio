@@ -1,9 +1,19 @@
+const aspectRatio = require('@tailwindcss/aspect-ratio')
+
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class', // Enable dark mode
   content: [
-    './index.html',
-    './src/**/*.{vue,js,ts,jsx,tsx}'
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
-  theme: {},
-  plugins: []
+  theme: {
+    extend: {
+      fontFamily: {
+        mulish: ['Mulish', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [
+    aspectRatio,
+  ],
 }

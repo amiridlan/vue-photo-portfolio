@@ -1,4 +1,4 @@
-import { defineComponent, ref, onMounted } from 'vue';
+import { defineComponent, ref, onMounted, watch } from 'vue';
 import { Icon } from '@iconify/vue';
 import VueEasyLightbox from 'vue-easy-lightbox';
 export default defineComponent({
@@ -10,6 +10,10 @@ export default defineComponent({
     props: {
         images: {
             type: Array,
+            required: true
+        },
+        galleryTitle: {
+            type: String,
             required: true
         }
     },
@@ -32,9 +36,15 @@ export default defineComponent({
             });
         };
         // Initialize orientations array
-        onMounted(async () => {
-            const results = await Promise.all(props.images.map(img => checkOrientation(img.thumbnail)));
+        const updateOrientations = async () => {
+            const results = await Promise.all(props.images.map((img) => checkOrientation(img.thumbnail)));
             orientations.value = results;
+        };
+        onMounted(() => {
+            updateOrientations();
+        });
+        watch(() => props.images, () => {
+            updateOrientations();
         });
         return { visible, index, showLightbox, orientations };
     }
@@ -48,6 +58,22 @@ const __VLS_componentsOption = {
 let __VLS_components;
 let __VLS_directives;
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({
+    ...{ class: "pt-24" },
+});
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({
+    ...{ class: "flex items-center mb-4" },
+});
+__VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)({
+    ...{ onClick: (...[$event]) => {
+            __VLS_ctx.$emit('back');
+        } },
+    ...{ class: "px-4 py-2 bg-white hover:bg-gray-200 text-black font-bold rounded" },
+});
+__VLS_asFunctionalElement(__VLS_intrinsicElements.h1, __VLS_intrinsicElements.h1)({
+    ...{ class: "flex-grow text-center text-4xl font-bold text-white" },
+});
+(__VLS_ctx.galleryTitle);
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({
     ...{ class: "flex flex-wrap gap-4 p-4 justify-center" },
 });
 for (const [image, idx] of __VLS_getVForSourceType((__VLS_ctx.images))) {
@@ -56,10 +82,10 @@ for (const [image, idx] of __VLS_getVForSourceType((__VLS_ctx.images))) {
                 __VLS_ctx.showLightbox(idx);
             } },
         key: (image.id),
-        ...{ class: (['relative group cursor-pointer rounded-lg shadow-md overflow-hidden',
-                __VLS_ctx.orientations[idx] === 'vertical' ? 'w-52 h-58' : 'w-78 h-58']) },
+        ...{ class: (['relative group cursor-pointer shadow-md overflow-hidden',
+                __VLS_ctx.orientations[idx] === 'vertical' ? 'w-100 h-150' : 'w-150 h-100']) },
     });
-    __VLS_asFunctionalElement(__VLS_intrinsicElements.img, __VLS_intrinsicElements.img)({
+    __VLS_asFunctionalElement(__VLS_intrinsicElements.img)({
         src: (image.thumbnail),
         alt: (image.title),
         ...{ class: "w-full h-full object-cover transition-transform group-hover:scale-105" },
@@ -103,6 +129,22 @@ const __VLS_11 = {
     }
 };
 var __VLS_7;
+/** @type {__VLS_StyleScopedClasses['pt-24']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex']} */ ;
+/** @type {__VLS_StyleScopedClasses['items-center']} */ ;
+/** @type {__VLS_StyleScopedClasses['mb-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['px-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['py-2']} */ ;
+/** @type {__VLS_StyleScopedClasses['bg-white']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:bg-gray-200']} */ ;
+/** @type {__VLS_StyleScopedClasses['text-black']} */ ;
+/** @type {__VLS_StyleScopedClasses['font-bold']} */ ;
+/** @type {__VLS_StyleScopedClasses['rounded']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex-grow']} */ ;
+/** @type {__VLS_StyleScopedClasses['text-center']} */ ;
+/** @type {__VLS_StyleScopedClasses['text-4xl']} */ ;
+/** @type {__VLS_StyleScopedClasses['font-bold']} */ ;
+/** @type {__VLS_StyleScopedClasses['text-white']} */ ;
 /** @type {__VLS_StyleScopedClasses['flex']} */ ;
 /** @type {__VLS_StyleScopedClasses['flex-wrap']} */ ;
 /** @type {__VLS_StyleScopedClasses['gap-4']} */ ;
@@ -111,7 +153,6 @@ var __VLS_7;
 /** @type {__VLS_StyleScopedClasses['relative']} */ ;
 /** @type {__VLS_StyleScopedClasses['group']} */ ;
 /** @type {__VLS_StyleScopedClasses['cursor-pointer']} */ ;
-/** @type {__VLS_StyleScopedClasses['rounded-lg']} */ ;
 /** @type {__VLS_StyleScopedClasses['shadow-md']} */ ;
 /** @type {__VLS_StyleScopedClasses['overflow-hidden']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-full']} */ ;

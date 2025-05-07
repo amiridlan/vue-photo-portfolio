@@ -17,7 +17,7 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.header, __VLS_intrinsicElement
     ...{ class: "text-center mb-8" },
 });
 __VLS_asFunctionalElement(__VLS_intrinsicElements.h1, __VLS_intrinsicElements.h1)({
-    ...{ class: "text-3xl pt-18 sm:text-4xl md:text-5xl font-bold mb-4 " },
+    ...{ class: " pt-18 text-6xl sm:text-7xl md:text-8xl font-bold mb-4 " },
 });
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({
     ...{ class: "flex justify-center space-x-6 pb-8" },
@@ -72,10 +72,10 @@ const __VLS_10 = __VLS_9({
 }, ...__VLS_functionalComponentArgsRest(__VLS_9));
 /** @type {__VLS_StyleScopedClasses['text-center']} */ ;
 /** @type {__VLS_StyleScopedClasses['mb-8']} */ ;
-/** @type {__VLS_StyleScopedClasses['text-3xl']} */ ;
 /** @type {__VLS_StyleScopedClasses['pt-18']} */ ;
-/** @type {__VLS_StyleScopedClasses['sm:text-4xl']} */ ;
-/** @type {__VLS_StyleScopedClasses['md:text-5xl']} */ ;
+/** @type {__VLS_StyleScopedClasses['text-6xl']} */ ;
+/** @type {__VLS_StyleScopedClasses['sm:text-7xl']} */ ;
+/** @type {__VLS_StyleScopedClasses['md:text-8xl']} */ ;
 /** @type {__VLS_StyleScopedClasses['font-bold']} */ ;
 /** @type {__VLS_StyleScopedClasses['mb-4']} */ ;
 /** @type {__VLS_StyleScopedClasses['flex']} */ ;

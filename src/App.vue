@@ -1,26 +1,73 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
-import Gallery from './components/Gallery.vue'
+import { defineComponent, ref } from 'vue'
+import Polaroid from './components/Polaroid.vue'
 import Header from './components/Header.vue'
-import images from './data/images.json'
+import Gallery from './components/Gallery.vue'
+import imagesData from './data/images.json'
+import polaroidData from './data/polaroid.json'
+
+interface Image {
+  id: number
+  title: string
+  thumbnail: string
+  full: string
+}
+
+interface ImagesData {
+  kmk: Image[]
+  pgk: Image[]
+  streets: Image[]
+  portraits: Image[]
+}
+
+interface PolaroidFigure {
+  id: string
+  src: string
+  caption: string
+}
 
 export default defineComponent({
   name: 'App',
   components: {
-    Gallery,
-    Header
+    Polaroid,
+    Header,
+    Gallery
   },
-  data() {
+  setup() {
+    const selectedGroup = ref<keyof ImagesData | null>(null)
+    const selectedImages = ref<Image[]>([])
+    const selectedCaption = ref<string>('')
+
+    function handleSelectGallery(groupId: keyof ImagesData) {
+      selectedGroup.value = groupId
+      selectedImages.value = imagesData[groupId] || []
+      // Find caption from polaroidData by groupId
+      const polaroidFigures: PolaroidFigure[] = polaroidData
+      const matchedFigure = polaroidFigures.find(fig => fig.id === groupId)
+      selectedCaption.value = matchedFigure ? matchedFigure.caption : ''
+    }
+
+    function handleBack() {
+      selectedGroup.value = null
+      selectedImages.value = []
+      selectedCaption.value = ''
+    }
+
     return {
-      images: images
+      selectedGroup,
+      selectedImages,
+      selectedCaption,
+      handleSelectGallery,
+      handleBack
     }
   }
 })
 </script>
 
 <template>
-  <div class="container mx-auto px-4 py-8  text-white">
-    <Header />
-    <Gallery :images="images" />
+  <div class="container mx-auto px-4 py-8 text-white">
+    <Header v-if="!selectedGroup" />
+    <Polaroid v-if="!selectedGroup" @selectGallery="handleSelectGallery" />
+    <Gallery v-else :images="selectedImages" :galleryTitle="selectedCaption" @back="handleBack" />
   </div>
 </template>
