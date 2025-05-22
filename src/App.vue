@@ -16,7 +16,6 @@ interface ImagesData {
   kmk: Image[]
   pgk: Image[]
   streets: Image[]
-  portraits: Image[]
 }
 
 interface PolaroidFigure {
@@ -37,9 +36,19 @@ export default defineComponent({
     const selectedImages = ref<Image[]>([])
     const selectedCaption = ref<string>('')
 
+    // Function to preload images
+    const preloadImages = (images: Image[]) => {
+      images.slice(0, 3).forEach((img) => {
+        const preImg = new Image()
+        preImg.src = img.thumbnail
+      })
+    }
+
     function handleSelectGallery(groupId: keyof ImagesData) {
       selectedGroup.value = groupId
       selectedImages.value = imagesData[groupId] || []
+      // Preload first few images for LCP
+      preloadImages(selectedImages.value)
       // Find caption from polaroidData by groupId
       const polaroidFigures: PolaroidFigure[] = polaroidData
       const matchedFigure = polaroidFigures.find(fig => fig.id === groupId)

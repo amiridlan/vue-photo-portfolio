@@ -66,43 +66,6 @@
       "thumbnail": "/images/kmk/kmk_13.avif"
     }
   ],
-  "pgk": [
-    {
-      "id": 1,
-      "title": "Photo 1",
-      "thumbnail": "/images/pgk/PGK_1.avif"
-    },
-    {
-      "id": 7,
-      "title": "Photo 7",
-      "thumbnail": "/images/pgk/PGK_2.avif"
-    },
-    {
-      "id": 8,
-      "title": "Photo 8",
-      "thumbnail": "/images/pgk/PGK_3.avif"
-    },
-    {
-      "id": 9,
-      "title": "Photo 9",
-      "thumbnail": "/images/pgk/PGK_4.avif"
-    },
-    {
-      "id": 12,
-      "title": "Photo 12",
-      "thumbnail": "/images/pgk/PGK_5.avif"
-    },
-    {
-      "id": 10,
-      "title": "Photo 10",
-      "thumbnail": "/images/pgk/PGK_6.avif"
-    },
-    {
-      "id": 11,
-      "title": "Photo 11",
-      "thumbnail": "/images/pgk/PGK_7.avif"
-    }
-  ],
   "streets": [
     {
       "id": 6,
@@ -150,31 +113,41 @@
       "thumbnail": "/images/pgk/DSC02035.avif"
     }
   ],
-  "portraits": [
+  "pgk": [
     {
       "id": 1,
       "title": "Photo 1",
-      "thumbnail": "/images/optimized/DSC01994.avif"
+      "thumbnail": "/images/pgk/PGK_1.avif"
     },
     {
-      "id": 2,
-      "title": "Photo 2",
-      "thumbnail": "/images/optimized/DSC02958.avif"
+      "id": 7,
+      "title": "Photo 7",
+      "thumbnail": "/images/pgk/PGK_2.avif"
     },
     {
-      "id": 3,
-      "title": "Photo 3",
-      "thumbnail": "/images/optimized/DSC02279.avif"
+      "id": 8,
+      "title": "Photo 8",
+      "thumbnail": "/images/pgk/PGK_3.avif"
     },
     {
-      "id": 4,
-      "title": "Photo 4",
-      "thumbnail": "/images/optimized/DSC03232.avif"
+      "id": 9,
+      "title": "Photo 9",
+      "thumbnail": "/images/pgk/PGK_4.avif"
     },
     {
-      "id": 5,
-      "title": "Photo 5",
-      "thumbnail": "/images/optimized/DSC03333.avif"
+      "id": 12,
+      "title": "Photo 12",
+      "thumbnail": "/images/pgk/PGK_5.avif"
+    },
+    {
+      "id": 10,
+      "title": "Photo 10",
+      "thumbnail": "/images/pgk/PGK_6.avif"
+    },
+    {
+      "id": 11,
+      "title": "Photo 11",
+      "thumbnail": "/images/pgk/PGK_7.avif"
     }
   ]
 }
