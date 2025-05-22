@@ -89,7 +89,7 @@ export default defineComponent({
         <img 
           :src="image.thumbnail" 
           :alt="image.title"
-          loading="lazy"
+          :loading="idx >= 3 ? 'lazy' : 'eager'"
           class="w-full h-full object-cover transition-transform group-hover:scale-105"
         />
         <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
