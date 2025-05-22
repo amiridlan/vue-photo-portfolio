@@ -3,176 +3,148 @@
     {
       "id": 1,
       "title": "Photo 1",
-      "thumbnail": "/images/optimized/DSC01994.avif",
-      "full": "/images/original/DSC01994.jpg"
+      "thumbnail": "/images/optimized/DSC01994.avif"
     },
     {
       "id": 2,
       "title": "Photo 2",
-      "thumbnail": "/images/optimized/DSC02958.avif",
-      "full": "/images/original/DSC02958.jpg"
+      "thumbnail": "/images/optimized/DSC02958.avif"
     },
     {
       "id": 3,
       "title": "Photo 3",
-      "thumbnail": "/images/optimized/DSC02279.avif",
-      "full": "/images/original/DSC02279.jpg"
+      "thumbnail": "/images/optimized/DSC02279.avif"
     },
     {
       "id": 4,
       "title": "Photo 4",
-      "thumbnail": "/images/optimized/DSC03232.avif",
-      "full": "/images/original/DSC03232.jpg"
+      "thumbnail": "/images/optimized/DSC03232.avif"
     },
     {
       "id": 5,
       "title": "Photo 5",
-      "thumbnail": "/images/optimized/DSC03333.avif",
-      "full": "/images/original/DSC03333.jpg"
+      "thumbnail": "/images/optimized/DSC03333.avif"
     }
   ],
   "pgk": [
     {
       "id": 6,
       "title": "Photo 6",
-      "thumbnail": "/images/optimized/DSC03294.avif",
-      "full": "/images/original/DSC03294.jpg"
+      "thumbnail": "/images/optimized/DSC03294.avif"
     },
     {
       "id": 7,
       "title": "Photo 7",
-      "thumbnail": "/images/optimized/DSC02003.avif",
-      "full": "/images/original/DSC02003.jpg"
+      "thumbnail": "/images/optimized/DSC02003.avif"
     },
     {
       "id": 8,
       "title": "Photo 8",
-      "thumbnail": "/images/optimized/DSC02283.avif",
-      "full": "/images/original/DSC02283.jpg"
+      "thumbnail": "/images/optimized/DSC02283.avif"
     },
     {
       "id": 9,
       "title": "Photo 9",
-      "thumbnail": "/images/optimized/DSC03348.avif",
-      "full": "/images/original/DSC03348.jpg"
+      "thumbnail": "/images/optimized/DSC03348.avif"
     },
     {
       "id": 10,
       "title": "Photo 10",
-      "thumbnail": "/images/optimized/DSC02117.avif",
-      "full": "/images/original/DSC02117.jpg"
+      "thumbnail": "/images/optimized/DSC02117.avif"
     },
     {
       "id": 11,
       "title": "Photo 11",
-      "thumbnail": "/images/optimized/DSC03265.avif",
-      "full": "/images/original/DSC03265.jpg"
+      "thumbnail": "/images/optimized/DSC03265.avif"
     },
     {
       "id": 12,
       "title": "Photo 12",
-      "thumbnail": "/images/optimized/DSC02995.avif",
-      "full": "/images/original/DSC02995.jpg"
+      "thumbnail": "/images/optimized/DSC02995.avif"
     },
     {
       "id": 14,
       "title": "Photo 14",
-      "thumbnail": "/images/optimized/DSC03416.avif",
-      "full": "/images/original/DSC03416.jpg"
+      "thumbnail": "/images/optimized/DSC03416.avif"
     },
     {
       "id": 15,
       "title": "Photo 15",
-      "thumbnail": "/images/optimized/DSC02035.avif",
-      "full": "/images/original/DSC02035.jpg"
+      "thumbnail": "/images/optimized/DSC02035.avif"
     }
   ],
   "streets": [
     {
       "id": 6,
       "title": "Photo 6",
-      "thumbnail": "/images/optimized/DSC03294.avif",
-      "full": "/images/original/DSC03294.jpg"
+      "thumbnail": "/images/optimized/DSC03294.avif"
     },
     {
       "id": 7,
       "title": "Photo 7",
-      "thumbnail": "/images/optimized/DSC02003.avif",
-      "full": "/images/original/DSC02003.jpg"
+      "thumbnail": "/images/optimized/DSC02003.avif"
     },
     {
       "id": 8,
       "title": "Photo 8",
-      "thumbnail": "/images/optimized/DSC02283.avif",
-      "full": "/images/original/DSC02283.jpg"
+      "thumbnail": "/images/optimized/DSC02283.avif"
     },
     {
       "id": 9,
       "title": "Photo 9",
-      "thumbnail": "/images/optimized/DSC03348.avif",
-      "full": "/images/original/DSC03348.jpg"
+      "thumbnail": "/images/optimized/DSC03348.avif"
     },
     {
       "id": 10,
       "title": "Photo 10",
-      "thumbnail": "/images/optimized/DSC02117.avif",
-      "full": "/images/original/DSC02117.jpg"
+      "thumbnail": "/images/optimized/DSC02117.avif"
     },
     {
       "id": 11,
       "title": "Photo 11",
-      "thumbnail": "/images/optimized/DSC03265.avif",
-      "full": "/images/original/DSC03265.jpg"
+      "thumbnail": "/images/optimized/DSC03265.avif"
     },
     {
       "id": 12,
       "title": "Photo 12",
-      "thumbnail": "/images/optimized/DSC02995.avif",
-      "full": "/images/original/DSC02995.jpg"
+      "thumbnail": "/images/optimized/DSC02995.avif"
     },
     {
       "id": 14,
       "title": "Photo 14",
-      "thumbnail": "/images/optimized/DSC03416.avif",
-      "full": "/images/original/DSC03416.jpg"
+      "thumbnail": "/images/optimized/DSC03416.avif"
     },
     {
       "id": 15,
       "title": "Photo 15",
-      "thumbnail": "/images/optimized/DSC02035.avif",
-      "full": "/images/original/DSC02035.jpg"
+      "thumbnail": "/images/optimized/DSC02035.avif"
     }
   ],
   "portraits": [
     {
       "id": 1,
       "title": "Photo 1",
-      "thumbnail": "/images/optimized/DSC01994.avif",
-      "full": "/images/original/DSC01994.jpg"
+      "thumbnail": "/images/optimized/DSC01994.avif"
     },
     {
       "id": 2,
       "title": "Photo 2",
-      "thumbnail": "/images/optimized/DSC02958.avif",
-      "full": "/images/original/DSC02958.jpg"
+      "thumbnail": "/images/optimized/DSC02958.avif"
     },
     {
       "id": 3,
       "title": "Photo 3",
-      "thumbnail": "/images/optimized/DSC02279.avif",
-      "full": "/images/original/DSC02279.jpg"
+      "thumbnail": "/images/optimized/DSC02279.avif"
     },
     {
       "id": 4,
       "title": "Photo 4",
-      "thumbnail": "/images/optimized/DSC03232.avif",
-      "full": "/images/original/DSC03232.jpg"
+      "thumbnail": "/images/optimized/DSC03232.avif"
     },
     {
       "id": 5,
       "title": "Photo 5",
-      "thumbnail": "/images/optimized/DSC03333.avif",
-      "full": "/images/original/DSC03333.jpg"
+      "thumbnail": "/images/optimized/DSC03333.avif"
     }
   ]
 }

@@ -99,7 +99,7 @@ export default defineComponent({
 
       <VueEasyLightbox
         :visible="visible"
-        :imgs="images.map(img => img.full)"
+        :imgs="images.map(img => img.thumbnail)"
         :index="index"
         @hide="visible = false"
       />
