@@ -9,7 +9,7 @@
         @click="handleClick(item.id)"
       >
         <div class="aspect-w-4 aspect-h-3">
-          <img :src="item.src" class="object-cover w-full h-70" />
+          <img :src="item.src" loading="lazy" class="object-cover w-full h-70" />
         </div>
         <figcaption>{{ item.caption }}</figcaption>
       </figure>
