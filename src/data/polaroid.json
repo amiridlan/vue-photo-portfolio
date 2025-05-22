@@ -1,22 +1,17 @@
 [
   {
     "id": "kmk",
-    "src": "/images/optimized/DSC02958.avif",
+    "src": "/images/kmk/kmk_9.avif",
     "caption": "Kotak Muzik Kita 2023"
   },
   {
-    "id": "pgk",
-    "src": "/images/optimized/DSC03294.avif",
-    "caption": "Pentas Gegar Kosmik 2024"
-  },
-  {
     "id": "streets",
-    "src": "/images/optimized/DSC03265.avif",
+    "src": "/images/pgk/PGK_2.avif",
     "caption": "Street Photography"
   },
   {
-    "id": "portraits",
-    "src": "/images/optimized/DSC02279.avif",
-    "caption": "Portraits"
+    "id": "pgk",
+    "src": "/images/pgk/PGK_5.avif",
+    "caption": "Pentas Gegar Kosmik 2024"
   }
 ]

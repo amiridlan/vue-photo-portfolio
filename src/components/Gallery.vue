@@ -62,7 +62,7 @@ export default defineComponent({
 
     return { visible, index, showLightbox, orientations }
   }
-})
+});
 </script>
 
 <template>
@@ -83,7 +83,7 @@ export default defineComponent({
         v-for="(image, idx) in images" 
         :key="image.id"
         :class="['relative group cursor-pointer shadow-md overflow-hidden', 
-                orientations[idx] === 'vertical' ? 'w-100 h-150' : 'w-150 h-100']"
+                orientations[idx] === 'vertical' ? 'w-90 h-130' : 'w-140 h-130']"
         @click="showLightbox(idx)"
       >
         <img 

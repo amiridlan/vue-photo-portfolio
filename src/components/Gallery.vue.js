@@ -83,7 +83,7 @@ for (const [image, idx] of __VLS_getVForSourceType((__VLS_ctx.images))) {
             } },
         key: (image.id),
         ...{ class: (['relative group cursor-pointer shadow-md overflow-hidden',
-                __VLS_ctx.orientations[idx] === 'vertical' ? 'w-100 h-150' : 'w-150 h-100']) },
+                __VLS_ctx.orientations[idx] === 'vertical' ? 'w-90 h-130' : 'w-140 h-130']) },
     });
     __VLS_asFunctionalElement(__VLS_intrinsicElements.img)({
         src: (image.thumbnail),

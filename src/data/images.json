@@ -3,121 +3,151 @@
     {
       "id": 1,
       "title": "Photo 1",
-      "thumbnail": "/images/optimized/DSC01994.avif"
-    },
-    {
-      "id": 2,
-      "title": "Photo 2",
-      "thumbnail": "/images/optimized/DSC02958.avif"
+      "thumbnail": "/images/kmk/kmk_1.avif"
     },
     {
       "id": 3,
       "title": "Photo 3",
-      "thumbnail": "/images/optimized/DSC02279.avif"
+      "thumbnail": "/images/kmk/kmk_3.avif"
+    },
+    {
+      "id": 2,
+      "title": "Photo 2",
+      "thumbnail": "/images/kmk/kmk_2.avif"
     },
     {
       "id": 4,
       "title": "Photo 4",
-      "thumbnail": "/images/optimized/DSC03232.avif"
+      "thumbnail": "/images/kmk/kmk_4.avif"
     },
     {
       "id": 5,
       "title": "Photo 5",
-      "thumbnail": "/images/optimized/DSC03333.avif"
-    }
-  ],
-  "pgk": [
-    {
-      "id": 6,
-      "title": "Photo 6",
-      "thumbnail": "/images/optimized/DSC03294.avif"
+      "thumbnail": "/images/kmk/kmk_5.avif"
     },
     {
       "id": 7,
       "title": "Photo 7",
-      "thumbnail": "/images/optimized/DSC02003.avif"
+      "thumbnail": "/images/kmk/kmk_7.avif"
+    },
+    {
+      "id": 6,
+      "title": "Photo 6",
+      "thumbnail": "/images/kmk/kmk_6.avif"
     },
     {
       "id": 8,
       "title": "Photo 8",
-      "thumbnail": "/images/optimized/DSC02283.avif"
-    },
-    {
-      "id": 9,
-      "title": "Photo 9",
-      "thumbnail": "/images/optimized/DSC03348.avif"
-    },
-    {
-      "id": 10,
-      "title": "Photo 10",
-      "thumbnail": "/images/optimized/DSC02117.avif"
+      "thumbnail": "/images/kmk/kmk_8.avif"
     },
     {
       "id": 11,
       "title": "Photo 11",
-      "thumbnail": "/images/optimized/DSC03265.avif"
+      "thumbnail": "/images/kmk/kmk_11.avif"
     },
     {
       "id": 12,
       "title": "Photo 12",
-      "thumbnail": "/images/optimized/DSC02995.avif"
+      "thumbnail": "/images/kmk/kmk_12.avif"
     },
     {
-      "id": 14,
-      "title": "Photo 14",
-      "thumbnail": "/images/optimized/DSC03416.avif"
+      "id": 9,
+      "title": "Photo 9",
+      "thumbnail": "/images/kmk/kmk_9.avif"
     },
     {
-      "id": 15,
-      "title": "Photo 15",
-      "thumbnail": "/images/optimized/DSC02035.avif"
+      "id": 10,
+      "title": "Photo 10",
+      "thumbnail": "/images/kmk/kmk_10.avif"
+    },
+    {
+      "id": 13,
+      "title": "Photo 13",
+      "thumbnail": "/images/kmk/kmk_13.avif"
+    }
+  ],
+  "pgk": [
+    {
+      "id": 1,
+      "title": "Photo 1",
+      "thumbnail": "/images/pgk/PGK_1.avif"
+    },
+    {
+      "id": 7,
+      "title": "Photo 7",
+      "thumbnail": "/images/pgk/PGK_2.avif"
+    },
+    {
+      "id": 8,
+      "title": "Photo 8",
+      "thumbnail": "/images/pgk/PGK_3.avif"
+    },
+    {
+      "id": 9,
+      "title": "Photo 9",
+      "thumbnail": "/images/pgk/PGK_4.avif"
+    },
+    {
+      "id": 12,
+      "title": "Photo 12",
+      "thumbnail": "/images/pgk/PGK_5.avif"
+    },
+    {
+      "id": 10,
+      "title": "Photo 10",
+      "thumbnail": "/images/pgk/PGK_6.avif"
+    },
+    {
+      "id": 11,
+      "title": "Photo 11",
+      "thumbnail": "/images/pgk/PGK_7.avif"
     }
   ],
   "streets": [
     {
       "id": 6,
       "title": "Photo 6",
-      "thumbnail": "/images/optimized/DSC03294.avif"
+      "thumbnail": "/images/pgk/DSC03294.avif"
     },
     {
       "id": 7,
       "title": "Photo 7",
-      "thumbnail": "/images/optimized/DSC02003.avif"
+      "thumbnail": "/images/pgk/DSC02003.avif"
     },
     {
       "id": 8,
       "title": "Photo 8",
-      "thumbnail": "/images/optimized/DSC02283.avif"
+      "thumbnail": "/images/pgk/DSC02283.avif"
     },
     {
       "id": 9,
       "title": "Photo 9",
-      "thumbnail": "/images/optimized/DSC03348.avif"
+      "thumbnail": "/images/pgk/DSC03348.avif"
     },
     {
       "id": 10,
       "title": "Photo 10",
-      "thumbnail": "/images/optimized/DSC02117.avif"
+      "thumbnail": "/images/pgk/DSC02117.avif"
     },
     {
       "id": 11,
       "title": "Photo 11",
-      "thumbnail": "/images/optimized/DSC03265.avif"
+      "thumbnail": "/images/pgk/DSC03265.avif"
     },
     {
       "id": 12,
       "title": "Photo 12",
-      "thumbnail": "/images/optimized/DSC02995.avif"
+      "thumbnail": "/images/pgk/DSC02995.avif"
     },
     {
       "id": 14,
       "title": "Photo 14",
-      "thumbnail": "/images/optimized/DSC03416.avif"
+      "thumbnail": "/images/pgk/DSC03416.avif"
     },
     {
       "id": 15,
       "title": "Photo 15",
-      "thumbnail": "/images/optimized/DSC02035.avif"
+      "thumbnail": "/images/pgk/DSC02035.avif"
     }
   ],
   "portraits": [
