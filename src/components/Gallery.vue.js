@@ -111,13 +111,13 @@ const __VLS_4 = {}.VueEasyLightbox;
 const __VLS_5 = __VLS_asFunctionalComponent(__VLS_4, new __VLS_4({
     ...{ 'onHide': {} },
     visible: (__VLS_ctx.visible),
-    imgs: (__VLS_ctx.images.map(img => img.full)),
+    imgs: (__VLS_ctx.images.map(img => img.thumbnail)),
     index: (__VLS_ctx.index),
 }));
 const __VLS_6 = __VLS_5({
     ...{ 'onHide': {} },
     visible: (__VLS_ctx.visible),
-    imgs: (__VLS_ctx.images.map(img => img.full)),
+    imgs: (__VLS_ctx.images.map(img => img.thumbnail)),
     index: (__VLS_ctx.index),
 }, ...__VLS_functionalComponentArgsRest(__VLS_5));
 let __VLS_8;

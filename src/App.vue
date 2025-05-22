@@ -10,7 +10,6 @@ interface Image {
   id: number
   title: string
   thumbnail: string
-  full: string
 }
 
 interface ImagesData {

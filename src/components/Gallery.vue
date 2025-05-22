@@ -7,7 +7,6 @@ interface GalleryImage {
   id: number
   title: string
   thumbnail: string
-  full: string
 }
 
 export default defineComponent({
