@@ -17,7 +17,7 @@ export default defineComponent({
       <a href="https://www.instagram.com/_amirmir6/" target="_blank" class=" hover:text-pink-600 transition-colors">
         <Icon icon="mdi:instagram" class="w-6 h-6 sm:w-8 sm:h-8" />
       </a>
-      <a href="#"  target="_blank" class=" hover:text-pink-600 transition-colors">
+      <a href="https://www.tiktok.com/@_amirmir6"  target="_blank" class=" hover:text-pink-600 transition-colors">
         <Icon icon="ic:baseline-tiktok" class="w-6 h-6 sm:w-8 sm:h-8" />
       </a>
       <a href="https://github.com/amiridlan" target="_blank" class=" hover:text-pink-600 transition-colors">
