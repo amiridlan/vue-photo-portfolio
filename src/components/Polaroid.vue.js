@@ -40,6 +40,7 @@ for (const [item, index] of __VLS_getVForSourceType((__VLS_ctx.figures))) {
     });
     __VLS_asFunctionalElement(__VLS_intrinsicElements.img)({
         src: (item.src),
+        loading: (index >= 3 ? 'lazy' : 'eager'),
         ...{ class: "object-cover w-full h-70" },
     });
     __VLS_asFunctionalElement(__VLS_intrinsicElements.figcaption, __VLS_intrinsicElements.figcaption)({});

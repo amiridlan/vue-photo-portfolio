@@ -88,6 +88,7 @@ for (const [image, idx] of __VLS_getVForSourceType((__VLS_ctx.images))) {
     __VLS_asFunctionalElement(__VLS_intrinsicElements.img)({
         src: (image.thumbnail),
         alt: (image.title),
+        loading: (idx >= 3 ? 'lazy' : 'eager'),
         ...{ class: "w-full h-full object-cover transition-transform group-hover:scale-105" },
     });
     __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({

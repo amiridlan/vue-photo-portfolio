@@ -39,7 +39,7 @@ const __VLS_2 = __VLS_1({
     ...{ class: "w-6 h-6 sm:w-8 sm:h-8" },
 }, ...__VLS_functionalComponentArgsRest(__VLS_1));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)({
-    href: "#",
+    href: "https://www.tiktok.com/@_amirmir6",
     target: "_blank",
     ...{ class: " hover:text-pink-600 transition-colors" },
 });

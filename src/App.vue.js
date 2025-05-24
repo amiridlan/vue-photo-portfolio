@@ -15,9 +15,18 @@ export default defineComponent({
         const selectedGroup = ref(null);
         const selectedImages = ref([]);
         const selectedCaption = ref('');
+        // Function to preload images
+        const preloadImages = (images) => {
+            images.slice(0, 3).forEach((img) => {
+                const preImg = new Image();
+                preImg.src = img.thumbnail;
+            });
+        };
         function handleSelectGallery(groupId) {
             selectedGroup.value = groupId;
             selectedImages.value = imagesData[groupId] || [];
+            // Preload first few images for LCP
+            preloadImages(selectedImages.value);
             // Find caption from polaroidData by groupId
             const polaroidFigures = polaroidData;
             const matchedFigure = polaroidFigures.find(fig => fig.id === groupId);
