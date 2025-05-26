@@ -2,7 +2,6 @@
 import { defineComponent, ref, onMounted, watch } from 'vue'
 import { Icon } from '@iconify/vue'
 import VueEasyLightbox from 'vue-easy-lightbox'
-import { getAutoCropUrl, toPublicId } from '../utils/cloudinary'
 
 interface GalleryImage {
   id: number
@@ -49,7 +48,7 @@ export default defineComponent({
 
     // Initialize orientations array
     const updateOrientations = async () => {
-      const results = await Promise.all(props.images.map((img: GalleryImage) => checkOrientation(getAutoCropUrl(toPublicId(img.thumbnail)))))
+      const results = await Promise.all(props.images.map((img: GalleryImage) => checkOrientation(img.thumbnail)))
       orientations.value = results
     }
 
@@ -61,7 +60,7 @@ export default defineComponent({
       updateOrientations()
     })
 
-    return { visible, index, showLightbox, orientations, getAutoCropUrl, toPublicId }
+    return { visible, index, showLightbox, orientations }
   }
 });
 </script>
@@ -88,7 +87,7 @@ export default defineComponent({
         @click="showLightbox(idx)"
       >
         <img 
-          :src="getAutoCropUrl(toPublicId(image.thumbnail))" 
+          :src="image.thumbnail" 
           :alt="image.title"
           :loading="idx >= 3 ? 'lazy' : 'eager'"
           class="w-full h-full object-cover transition-transform group-hover:scale-105"
