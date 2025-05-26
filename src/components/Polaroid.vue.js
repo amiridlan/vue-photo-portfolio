@@ -1,5 +1,6 @@
 import { defineComponent } from 'vue';
 import figures from '../data/polaroid.json';
+import { getCloudinaryUrl } from '../config/cloudinary';
 export default defineComponent({
     name: 'Polaroid',
     emits: ['selectGallery'],
@@ -11,6 +12,11 @@ export default defineComponent({
     methods: {
         handleClick(id) {
             this.$emit('selectGallery', id);
+        }
+    },
+    computed: {
+        getCloudinaryUrl() {
+            return getCloudinaryUrl;
         }
     }
 });
@@ -39,7 +45,7 @@ for (const [item, index] of __VLS_getVForSourceType((__VLS_ctx.figures))) {
         ...{ class: "aspect-w-4 aspect-h-3" },
     });
     __VLS_asFunctionalElement(__VLS_intrinsicElements.img)({
-        src: (item.src),
+        src: (__VLS_ctx.getCloudinaryUrl(item.src)),
         loading: (index >= 3 ? 'lazy' : 'eager'),
         ...{ class: "object-cover w-full h-70" },
     });

@@ -9,7 +9,7 @@
         @click="handleClick(item.id)"
       >
         <div class="aspect-w-4 aspect-h-3">
-          <img :src="item.src" :loading="index >= 3 ? 'lazy' : 'eager'" class="object-cover w-full h-70" />
+          <img :src="getCloudinaryUrl(item.src)" :loading="index >= 3 ? 'lazy' : 'eager'" class="object-cover w-full h-70" />
         </div>
         <figcaption>{{ item.caption }}</figcaption>
       </figure>
@@ -20,6 +20,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import figures from '../data/polaroid.json'
+import { getCloudinaryUrl } from '../config/cloudinary'
 
 export default defineComponent({
   name: 'Polaroid',
@@ -32,6 +33,11 @@ export default defineComponent({
   methods: {
     handleClick(id: string) {
       this.$emit('selectGallery', id)
+    }
+  },
+  computed: {
+    getCloudinaryUrl() {
+      return getCloudinaryUrl
     }
   }
 })
