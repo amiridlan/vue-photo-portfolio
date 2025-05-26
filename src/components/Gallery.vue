@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent, ref, onMounted, watch } from 'vue'
+import { defineComponent, ref } from 'vue'
 import { Icon } from '@iconify/vue'
 import VueEasyLightbox from 'vue-easy-lightbox'
 
@@ -28,39 +28,13 @@ export default defineComponent({
   setup(props) {
     const visible = ref(false)
     const index = ref(0)
-    const orientations = ref<Array<'vertical' | 'horizontal'>>([])
 
     const showLightbox = (idx: number) => {
       index.value = idx
       visible.value = true
     }
 
-    // Async function to determine image orientation
-    const checkOrientation = (url: string): Promise<'vertical' | 'horizontal'> => {
-      return new Promise((resolve) => {
-        const img = new Image()
-        img.onload = () => {
-          resolve(img.height > img.width ? 'vertical' : 'horizontal')
-        }
-        img.src = url
-      })
-    }
-
-    // Initialize orientations array
-    const updateOrientations = async () => {
-      const results = await Promise.all(props.images.map((img: GalleryImage) => checkOrientation(img.thumbnail)))
-      orientations.value = results
-    }
-
-    onMounted(() => {
-      updateOrientations()
-    })
-
-    watch(() => props.images, () => {
-      updateOrientations()
-    })
-
-    return { visible, index, showLightbox, orientations }
+    return { visible, index, showLightbox }
   }
 });
 </script>
@@ -82,8 +56,7 @@ export default defineComponent({
       <div 
         v-for="(image, idx) in images" 
         :key="image.id"
-        :class="['relative group cursor-pointer shadow-md overflow-hidden', 
-                orientations[idx] === 'vertical' ? 'w-90 h-130' : 'w-140 h-130']"
+        class="relative group cursor-pointer shadow-md overflow-hidden w-100 h-120 aspect-[4/3]"
         @click="showLightbox(idx)"
       >
         <img 
