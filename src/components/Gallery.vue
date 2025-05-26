@@ -2,7 +2,7 @@
 import { defineComponent, ref, onMounted, watch } from 'vue'
 import { Icon } from '@iconify/vue'
 import VueEasyLightbox from 'vue-easy-lightbox'
-import { getCloudinaryUrl } from '../config/cloudinary'
+import { getAutoCropUrl, toPublicId } from '../utils/cloudinary'
 
 interface GalleryImage {
   id: number
@@ -49,7 +49,7 @@ export default defineComponent({
 
     // Initialize orientations array
     const updateOrientations = async () => {
-      const results = await Promise.all(props.images.map((img: GalleryImage) => checkOrientation(getCloudinaryUrl(img.thumbnail))))
+      const results = await Promise.all(props.images.map((img: GalleryImage) => checkOrientation(getAutoCropUrl(toPublicId(img.thumbnail)))))
       orientations.value = results
     }
 
@@ -61,7 +61,7 @@ export default defineComponent({
       updateOrientations()
     })
 
-    return { visible, index, showLightbox, orientations, getCloudinaryUrl }
+    return { visible, index, showLightbox, orientations, getAutoCropUrl, toPublicId }
   }
 });
 </script>
@@ -87,12 +87,12 @@ export default defineComponent({
                 orientations[idx] === 'vertical' ? 'w-90 h-130' : 'w-140 h-130']"
         @click="showLightbox(idx)"
       >
-    <img 
-      :src="getCloudinaryUrl(image.thumbnail)" 
-      :alt="image.title"
-      :loading="idx >= 3 ? 'lazy' : 'eager'"
-      class="w-full h-full object-cover transition-transform group-hover:scale-105"
-    />
+        <img 
+          :src="getAutoCropUrl(toPublicId(image.thumbnail))" 
+          :alt="image.title"
+          :loading="idx >= 3 ? 'lazy' : 'eager'"
+          class="w-full h-full object-cover transition-transform group-hover:scale-105"
+        />
         <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
           <Icon icon="mdi:magnify-plus-outline" class="text-white text-4xl" />
         </div>

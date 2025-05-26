@@ -1,7 +1,7 @@
 import { defineComponent, ref, onMounted, watch } from 'vue';
 import { Icon } from '@iconify/vue';
 import VueEasyLightbox from 'vue-easy-lightbox';
-import { getCloudinaryUrl } from '../config/cloudinary';
+import { getOptimizedUrl } from '../utils/cloudinary';
 export default defineComponent({
     name: 'Gallery',
     components: {
@@ -38,7 +38,7 @@ export default defineComponent({
         };
         // Initialize orientations array
         const updateOrientations = async () => {
-            const results = await Promise.all(props.images.map((img) => checkOrientation(getCloudinaryUrl(img.thumbnail))));
+            const results = await Promise.all(props.images.map((img) => checkOrientation(getOptimizedUrl(img.thumbnail))));
             orientations.value = results;
         };
         onMounted(() => {
@@ -47,7 +47,7 @@ export default defineComponent({
         watch(() => props.images, () => {
             updateOrientations();
         });
-        return { visible, index, showLightbox, orientations, getCloudinaryUrl };
+        return { visible, index, showLightbox, orientations, getOptimizedUrl };
     }
 });
 debugger; /* PartiallyEnd: #3632/script.vue */
@@ -87,7 +87,7 @@ for (const [image, idx] of __VLS_getVForSourceType((__VLS_ctx.images))) {
                 __VLS_ctx.orientations[idx] === 'vertical' ? 'w-90 h-130' : 'w-140 h-130']) },
     });
     __VLS_asFunctionalElement(__VLS_intrinsicElements.img)({
-        src: (__VLS_ctx.getCloudinaryUrl(image.thumbnail)),
+        src: (__VLS_ctx.getOptimizedUrl(image.thumbnail)),
         alt: (image.title),
         loading: (idx >= 3 ? 'lazy' : 'eager'),
         ...{ class: "w-full h-full object-cover transition-transform group-hover:scale-105" },
