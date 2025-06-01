@@ -1,5 +1,6 @@
 <script lang="ts">
-import { defineComponent, ref, defineAsyncComponent } from 'vue'
+import { defineComponent, ref, defineAsyncComponent, onMounted } from 'vue'
+import { HalfCircleSpinner } from 'epic-spinners'
 import imagesData from './data/images.json'
 import polaroidData from './data/polaroid.json'
 
@@ -26,12 +27,14 @@ export default defineComponent({
   components: {
     Polaroid: defineAsyncComponent(() => import('./components/Polaroid.vue')),
     Header: defineAsyncComponent(() => import('./components/Header.vue')),
-    Gallery: defineAsyncComponent(() => import('./components/Gallery.vue'))
+    Gallery: defineAsyncComponent(() => import('./components/Gallery.vue')),
+    HalfCircleSpinner
   },
   setup() {
     const selectedGroup = ref<keyof ImagesData | null>(null)
     const selectedImages = ref<Image[]>([])
     const selectedCaption = ref<string>('')
+    const loading = ref(true)
 
     // Function to preload images
     const preloadImages = (images: Image[]) => {
@@ -58,21 +61,36 @@ export default defineComponent({
       selectedCaption.value = ''
     }
 
+    onMounted(() => {
+      window.addEventListener('load', () => {
+        loading.value = false
+      })
+    })
+
     return {
       selectedGroup,
       selectedImages,
       selectedCaption,
       handleSelectGallery,
-      handleBack
+      handleBack,
+      loading
     }
   }
 })
 </script>
 
 <template>
-  <div class="container mx-auto px-4 py-8 text-white">
-    <Header v-if="!selectedGroup" />
-    <Polaroid v-if="!selectedGroup" @selectGallery="handleSelectGallery" />
-    <Gallery v-else :images="selectedImages" :galleryTitle="selectedCaption" @back="handleBack" />
+  <div>
+    <half-circle-spinner
+      v-if="loading"
+      :animation-duration="1000"
+      :size="60"
+      color="#ff1d5e"
+    />
+    <div v-else class="container mx-auto px-4 py-8 text-white">
+      <Header v-if="!selectedGroup" />
+      <Polaroid v-if="!selectedGroup" @selectGallery="handleSelectGallery" />
+      <Gallery v-else :images="selectedImages" :galleryTitle="selectedCaption" @back="handleBack" />
+    </div>
   </div>
 </template>
