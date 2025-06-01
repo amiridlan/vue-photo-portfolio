@@ -5,9 +5,5 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   return {
     plugins: [vue()],
-    envPrefix: 'CLOUDINARY_',
-    env: {
-      CLOUDINARY_CLOUD_NAME: env.CLOUDINARY_CLOUD_NAME,
-    },
   }
 })
