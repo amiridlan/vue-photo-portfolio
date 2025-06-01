@@ -1,8 +1,5 @@
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
-import Polaroid from './components/Polaroid.vue'
-import Header from './components/Header.vue'
-import Gallery from './components/Gallery.vue'
+import { defineComponent, ref, defineAsyncComponent } from 'vue'
 import imagesData from './data/images.json'
 import polaroidData from './data/polaroid.json'
 
@@ -27,9 +24,9 @@ interface PolaroidFigure {
 export default defineComponent({
   name: 'App',
   components: {
-    Polaroid,
-    Header,
-    Gallery
+    Polaroid: defineAsyncComponent(() => import('./components/Polaroid.vue')),
+    Header: defineAsyncComponent(() => import('./components/Header.vue')),
+    Gallery: defineAsyncComponent(() => import('./components/Gallery.vue'))
   },
   setup() {
     const selectedGroup = ref<keyof ImagesData | null>(null)
