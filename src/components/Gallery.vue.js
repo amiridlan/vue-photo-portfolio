@@ -90,6 +90,7 @@ for (const [image, idx] of __VLS_getVForSourceType((__VLS_ctx.images))) {
         src: (__VLS_ctx.getOptimizedUrl(image.thumbnail)),
         alt: (image.title),
         loading: (idx >= 3 ? 'lazy' : 'eager'),
+        fetchpriority: (idx < 3 ? 'high' : undefined),
         ...{ class: "w-full h-full object-cover transition-transform group-hover:scale-105" },
     });
     __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({
