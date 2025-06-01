@@ -56,7 +56,7 @@ export default defineComponent({
       <div 
         v-for="(image, idx) in images" 
         :key="image.id"
-        class="relative group cursor-pointer shadow-md overflow-hidden w-100 h-120 aspect-[4/3]"
+        class="relative group cursor-pointer shadow-md overflow-hidden w-100 h-120 aspect-[4/5]"
         @click="showLightbox(idx)"
       >
         <img 
