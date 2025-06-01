@@ -62,9 +62,7 @@ export default defineComponent({
     }
 
     onMounted(() => {
-      window.addEventListener('load', () => {
-        loading.value = false
-      })
+      loading.value = false
     })
 
     return {
