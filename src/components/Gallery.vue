@@ -2,6 +2,7 @@
 import { defineComponent, ref } from 'vue'
 import { Icon } from '@iconify/vue'
 import VueEasyLightbox from 'vue-easy-lightbox'
+import { HalfCircleSpinner } from 'epic-spinners'
 
 interface GalleryImage {
   id: number
@@ -13,7 +14,8 @@ export default defineComponent({
   name: 'Gallery',
   components: {
     Icon,
-    VueEasyLightbox
+    VueEasyLightbox,
+    HalfCircleSpinner
   },
   props: {
     images: {
@@ -25,16 +27,23 @@ export default defineComponent({
       required: true
     }
   },
-  setup(props) {
+setup(props) {
     const visible = ref(false)
     const index = ref(0)
+    // Track loading state of images
+    const loadingStates = ref(props.images.map(() => true))
 
     const showLightbox = (idx: number) => {
       index.value = idx
       visible.value = true
     }
 
-    return { visible, index, showLightbox }
+    // Mark image as loaded
+    const onImageLoad = (idx: number) => {
+      loadingStates.value[idx] = false
+    }
+
+    return { visible, index, showLightbox, loadingStates, onImageLoad }
   }
 });
 </script>
@@ -59,13 +68,25 @@ export default defineComponent({
         class="relative group cursor-pointer shadow-md overflow-hidden w-100 h-120 aspect-[4/5]"
         @click="showLightbox(idx)"
       >
+        <!-- Skeleton placeholder -->
+        <div
+          v-if="loadingStates[idx]"
+          class="absolute inset-0 flex items-center justify-center bg-gray-300"
+        >
+          <half-circle-spinner
+            :animation-duration="1000"
+            :size="40"
+            color="yellow"
+          />
+        </div>
         <img 
           :src="image.thumbnail" 
           :alt="image.title"
           :loading="idx >= 3 ? 'lazy' : 'eager'"
-          class="w-full h-full object-cover transition-transform group-hover:scale-105"
+          @load="onImageLoad(idx)"
+          :class="['w-full h-full object-cover transition-transform group-hover:scale-105', loadingStates[idx] ? 'opacity-0' : 'opacity-100']"
         />
-        <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+        <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-80 transition-opacity flex items-center justify-center">
           <Icon icon="mdi:magnify-plus-outline" class="text-white text-4xl" />
         </div>
       </div>
