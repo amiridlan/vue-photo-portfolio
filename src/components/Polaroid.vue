@@ -2,7 +2,7 @@
   <div id="background" class="pt-2">
     <div
       id="polaroid"
-      class="mx-auto w-md h-md md:w-lg md:h-lg lg:w-6xl lg:h-6xl 
+      class="mx-auto w-xs h-xs md:w-lg md:h-lg lg:w-6xl lg:h-6xl 
       grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
       
     >
