@@ -53,11 +53,11 @@ setup(props) {
     <div class="flex items-center mb-4">
       <button
         @click="$emit('back')"
-        class="px-4 py-2 bg-white hover:bg-gray-200 text-black font-bold rounded"
+        class="px-4 py-2 bg-[#36312d] text-[#f3ebdd] hover:bg-[#9f5731] font-bold rounded"
       >
         Back
       </button>
-      <h1 class="flex-grow text-center text-4xl font-bold text-white">
+      <h1 class="flex-grow text-center text-4xl font-bold">
         {{ galleryTitle }}
       </h1>
     </div>
@@ -68,17 +68,18 @@ setup(props) {
         class="relative group cursor-pointer shadow-md overflow-hidden w-100 h-120 aspect-[4/5]"
         @click="showLightbox(idx)"
       >
-        <!-- Skeleton placeholder -->
+        <!-- Skeleton with loading spinner -->
         <div
           v-if="loadingStates[idx]"
-          class="absolute inset-0 flex items-center justify-center bg-gray-300"
+          class="absolute inset-0 flex items-center justify-center bg-[#36312d]"
         >
           <half-circle-spinner
             :animation-duration="1000"
             :size="40"
-            color="yellow"
+            color="#9f5731"
           />
         </div>
+        <!-- Images loaded -->
         <img 
           :src="image.thumbnail" 
           :alt="image.title"

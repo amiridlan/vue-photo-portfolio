@@ -79,13 +79,7 @@ export default defineComponent({
 
 <template>
   <div>
-    <half-circle-spinner
-      v-if="loading"
-      :animation-duration="1000"
-      :size="60"
-      color="#ff1d5e"
-    />
-    <div v-else class="container mx-auto px-4 py-8 text-white">
+    <div class="container mx-auto px-4 py-8">
       <Header v-if="!selectedGroup" />
       <Polaroid v-if="!selectedGroup" @selectGallery="handleSelectGallery" />
       <Gallery v-else :images="selectedImages" :galleryTitle="selectedCaption" @back="handleBack" />
