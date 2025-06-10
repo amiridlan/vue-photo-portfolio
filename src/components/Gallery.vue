@@ -10,12 +10,15 @@ interface GalleryImage {
   thumbnail: string
 }
 
+import Button from './Button.vue'
+
 export default defineComponent({
   name: 'Gallery',
   components: {
     Icon,
     VueEasyLightbox,
-    HalfCircleSpinner
+    HalfCircleSpinner,
+    Button
   },
   props: {
     images: {
@@ -50,14 +53,9 @@ setup(props) {
 
 <template>
   <div class="pt-24">
-    <div class="flex items-center mb-4">
-      <button
-        @click="$emit('back')"
-        class="px-4 py-2 bg-[#36312d] text-[#f3ebdd] hover:bg-[#9f5731] font-bold rounded"
-      >
-        Back
-      </button>
-      <h1 class="flex-grow text-center text-4xl font-bold">
+    <div class="flex items-center mb-4 relative flex-col sm:flex-row sm:items-center">
+      <Button @click="$emit('back')" class="self-center sm:self-auto mb-2 sm:mb-0">Back</Button>
+      <h1 class="text-3xl sm:text-4xl font-bold text-center sm:absolute sm:left-1/2 sm:top-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 w-full sm:w-auto">
         {{ galleryTitle }}
       </h1>
     </div>
@@ -65,7 +63,7 @@ setup(props) {
       <div 
         v-for="(image, idx) in images" 
         :key="image.id"
-        class="relative group cursor-pointer shadow-md overflow-hidden w-100 h-120 aspect-[4/5]"
+        class="relative group cursor-pointer shadow-md overflow-hidden w-sm aspect-[4/5]"
         @click="showLightbox(idx)"
       >
         <!-- Skeleton with loading spinner -->
