@@ -54,7 +54,7 @@ setup(props) {
 <template>
   <div class="pt-24">
     <div class="flex items-center mb-4 relative flex-col sm:flex-row sm:items-center">
-      <Button @click="$emit('back')" class="self-center sm:self-auto mb-2 sm:mb-0">Back</Button>
+      <Button @click="$emit('back')" class="self-center sm:self-auto sm:mb-0">Back</Button>
       <h1 class="text-3xl sm:text-4xl font-bold text-center sm:absolute sm:left-1/2 sm:top-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 w-full sm:w-auto">
         {{ galleryTitle }}
       </h1>

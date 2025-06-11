@@ -79,7 +79,7 @@ export default defineComponent({
 
 <template>
   <div>
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-4 py-8 font-hanuman">
       <Header v-if="!selectedGroup" />
       <Polaroid v-if="!selectedGroup" @selectGallery="handleSelectGallery" />
       <Gallery v-else :images="selectedImages" :galleryTitle="selectedCaption" @back="handleBack" />

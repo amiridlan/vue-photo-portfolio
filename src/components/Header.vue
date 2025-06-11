@@ -12,7 +12,7 @@ export default defineComponent({
 
 <template>
   <header class="text-center mb-8">
-    <h1 class=" pt-18 text-6xl sm:text-7xl md:text-8xl font-bold mb-4 ">Amir Idlan</h1>
+    <h1 class=" pt-18 text-6xl sm:text-7xl md:text-8xl mb-4 ">AMIR IDLAN</h1>
     <div class="flex justify-center space-x-6 pb-8">
       <a href="https://www.instagram.com/_amirmir6/" target="_blank" class=" hover:text-[#9f5731] transition-colors">
         <Icon icon="mdi:instagram" class="w-6 h-6 sm:w-8 sm:h-8" />
