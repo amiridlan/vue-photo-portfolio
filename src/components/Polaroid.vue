@@ -12,7 +12,7 @@
         class="relative bg-[#F4F3F2] text-center text-lg p-2.5 shadow-sm transition-transform duration-300 hover:text-[#9f5731] hover:shadow-[5px_10px_100px_black] hover:scale-110 hover:z-20 cursor-pointer"
         @click="handleClick(item.id)"
       >
-        <div class="relative aspect-[5/4]">
+        <div class="relative">
           <div
             v-if="loading[index]"
             class="absolute inset-0 bg-gray-300 animate-pulse"

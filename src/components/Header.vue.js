@@ -17,7 +17,7 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.header, __VLS_intrinsicElement
     ...{ class: "text-center mb-8" },
 });
 __VLS_asFunctionalElement(__VLS_intrinsicElements.h1, __VLS_intrinsicElements.h1)({
-    ...{ class: " pt-18 text-6xl sm:text-7xl md:text-8xl font-bold mb-4 " },
+    ...{ class: " pt-18 text-6xl sm:text-7xl md:text-8xl mb-4 " },
 });
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({
     ...{ class: "flex justify-center space-x-6 pb-8" },
@@ -25,7 +25,7 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.d
 __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)({
     href: "https://www.instagram.com/_amirmir6/",
     target: "_blank",
-    ...{ class: " hover:text-pink-600 transition-colors" },
+    ...{ class: " hover:text-[#9f5731] transition-colors" },
 });
 const __VLS_0 = {}.Icon;
 /** @type {[typeof __VLS_components.Icon, ]} */ ;
@@ -41,7 +41,7 @@ const __VLS_2 = __VLS_1({
 __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)({
     href: "https://www.tiktok.com/@_amirmir6",
     target: "_blank",
-    ...{ class: " hover:text-pink-600 transition-colors" },
+    ...{ class: " hover:text-[#9f5731] transition-colors" },
 });
 const __VLS_4 = {}.Icon;
 /** @type {[typeof __VLS_components.Icon, ]} */ ;
@@ -57,7 +57,7 @@ const __VLS_6 = __VLS_5({
 __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)({
     href: "https://github.com/amiridlan",
     target: "_blank",
-    ...{ class: " hover:text-pink-600 transition-colors" },
+    ...{ class: " hover:text-[#9f5731] transition-colors" },
 });
 const __VLS_8 = {}.Icon;
 /** @type {[typeof __VLS_components.Icon, ]} */ ;
@@ -76,25 +76,24 @@ const __VLS_10 = __VLS_9({
 /** @type {__VLS_StyleScopedClasses['text-6xl']} */ ;
 /** @type {__VLS_StyleScopedClasses['sm:text-7xl']} */ ;
 /** @type {__VLS_StyleScopedClasses['md:text-8xl']} */ ;
-/** @type {__VLS_StyleScopedClasses['font-bold']} */ ;
 /** @type {__VLS_StyleScopedClasses['mb-4']} */ ;
 /** @type {__VLS_StyleScopedClasses['flex']} */ ;
 /** @type {__VLS_StyleScopedClasses['justify-center']} */ ;
 /** @type {__VLS_StyleScopedClasses['space-x-6']} */ ;
 /** @type {__VLS_StyleScopedClasses['pb-8']} */ ;
-/** @type {__VLS_StyleScopedClasses['hover:text-pink-600']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:text-[#9f5731]']} */ ;
 /** @type {__VLS_StyleScopedClasses['transition-colors']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-6']} */ ;
 /** @type {__VLS_StyleScopedClasses['h-6']} */ ;
 /** @type {__VLS_StyleScopedClasses['sm:w-8']} */ ;
 /** @type {__VLS_StyleScopedClasses['sm:h-8']} */ ;
-/** @type {__VLS_StyleScopedClasses['hover:text-pink-600']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:text-[#9f5731]']} */ ;
 /** @type {__VLS_StyleScopedClasses['transition-colors']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-6']} */ ;
 /** @type {__VLS_StyleScopedClasses['h-6']} */ ;
 /** @type {__VLS_StyleScopedClasses['sm:w-8']} */ ;
 /** @type {__VLS_StyleScopedClasses['sm:h-8']} */ ;
-/** @type {__VLS_StyleScopedClasses['hover:text-pink-600']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:text-[#9f5731]']} */ ;
 /** @type {__VLS_StyleScopedClasses['transition-colors']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-6']} */ ;
 /** @type {__VLS_StyleScopedClasses['h-6']} */ ;

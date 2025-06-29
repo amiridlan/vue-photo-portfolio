@@ -8,12 +8,12 @@
     {
       "id": 3,
       "title": "Photo 3",
-      "thumbnail": "/images/kmk/kmk_3.avif"
+      "thumbnail": "/images/kmk/kmk_2.avif"
     },
     {
       "id": 2,
       "title": "Photo 2",
-      "thumbnail": "/images/kmk/kmk_2.avif"
+      "thumbnail": "/images/kmk/kmk_3.avif"
     },
     {
       "id": 4,
@@ -28,12 +28,12 @@
     {
       "id": 7,
       "title": "Photo 7",
-      "thumbnail": "/images/kmk/kmk_7.avif"
+      "thumbnail": "/images/kmk/kmk_6.avif"
     },
     {
       "id": 6,
       "title": "Photo 6",
-      "thumbnail": "/images/kmk/kmk_6.avif"
+      "thumbnail": "/images/kmk/kmk_7.avif"
     },
     {
       "id": 8,
@@ -43,27 +43,32 @@
     {
       "id": 11,
       "title": "Photo 11",
-      "thumbnail": "/images/kmk/kmk_11.avif"
+      "thumbnail": "/images/kmk/kmk_9.avif"
     },
     {
       "id": 12,
       "title": "Photo 12",
-      "thumbnail": "/images/kmk/kmk_12.avif"
+      "thumbnail": "/images/kmk/kmk_10.avif"
     },
     {
       "id": 9,
       "title": "Photo 9",
-      "thumbnail": "/images/kmk/kmk_9.avif"
+      "thumbnail": "/images/kmk/kmk_11.avif"
     },
     {
       "id": 10,
       "title": "Photo 10",
-      "thumbnail": "/images/kmk/kmk_10.avif"
+      "thumbnail": "/images/kmk/kmk_12.avif"
     },
     {
       "id": 13,
       "title": "Photo 13",
       "thumbnail": "/images/kmk/kmk_13.avif"
+    },
+    {
+      "id": 10,
+      "title": "Photo 10",
+      "thumbnail": "/images/kmk/kmk_14.avif"
     }
   ],
   "streets": [
@@ -142,37 +147,77 @@
     {
       "id": 1,
       "title": "Photo 1",
-      "thumbnail": "/images/pgk/PGK_1.avif"
+      "thumbnail": "/images/pgk/pgk_1.avif"
     },
     {
       "id": 7,
       "title": "Photo 7",
-      "thumbnail": "/images/pgk/PGK_2.avif"
+      "thumbnail": "/images/pgk/pgk_2.avif"
     },
     {
       "id": 8,
       "title": "Photo 8",
-      "thumbnail": "/images/pgk/PGK_3.avif"
+      "thumbnail": "/images/pgk/pgk_3.avif"
     },
     {
       "id": 9,
       "title": "Photo 9",
-      "thumbnail": "/images/pgk/PGK_4.avif"
+      "thumbnail": "/images/pgk/pgk_4.avif"
     },
     {
       "id": 12,
       "title": "Photo 12",
-      "thumbnail": "/images/pgk/PGK_5.avif"
+      "thumbnail": "/images/pgk/pgk_5.avif"
     },
     {
       "id": 10,
       "title": "Photo 10",
-      "thumbnail": "/images/pgk/PGK_6.avif"
+      "thumbnail": "/images/pgk/pgk_6.avif"
     },
     {
       "id": 11,
       "title": "Photo 11",
-      "thumbnail": "/images/pgk/PGK_7.avif"
+      "thumbnail": "/images/pgk/pgk_7.avif"
+    },
+    {
+      "id": 11,
+      "title": "Photo 11",
+      "thumbnail": "/images/pgk/pgk_8.avif"
+    },
+    {
+      "id": 11,
+      "title": "Photo 11",
+      "thumbnail": "/images/pgk/pgk_9.avif"
+    },
+    {
+      "id": 11,
+      "title": "Photo 11",
+      "thumbnail": "/images/pgk/pgk_10.avif"
+    },
+    {
+      "id": 11,
+      "title": "Photo 11",
+      "thumbnail": "/images/pgk/pgk_11.avif"
+    },
+    {
+      "id": 11,
+      "title": "Photo 11",
+      "thumbnail": "/images/pgk/pgk_12.avif"
+    },
+    {
+      "id": 11,
+      "title": "Photo 11",
+      "thumbnail": "/images/pgk/pgk_13.avif"
+    },
+    {
+      "id": 11,
+      "title": "Photo 11",
+      "thumbnail": "/images/pgk/pgk_14.avif"
+    },
+    {
+      "id": 11,
+      "title": "Photo 11",
+      "thumbnail": "/images/pgk/pgk_15.avif"
     }
   ]
 }

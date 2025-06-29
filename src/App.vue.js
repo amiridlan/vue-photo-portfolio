@@ -1,20 +1,20 @@
-import { defineComponent, ref } from 'vue';
-import Polaroid from './components/Polaroid.vue';
-import Header from './components/Header.vue';
-import Gallery from './components/Gallery.vue';
+import { defineComponent, ref, defineAsyncComponent, onMounted } from 'vue';
+import { HalfCircleSpinner } from 'epic-spinners';
 import imagesData from './data/images.json';
 import polaroidData from './data/polaroid.json';
 export default defineComponent({
     name: 'App',
     components: {
-        Polaroid,
-        Header,
-        Gallery
+        Polaroid: defineAsyncComponent(() => import('./components/Polaroid.vue')),
+        Header: defineAsyncComponent(() => import('./components/Header.vue')),
+        Gallery: defineAsyncComponent(() => import('./components/Gallery.vue')),
+        HalfCircleSpinner
     },
     setup() {
         const selectedGroup = ref(null);
         const selectedImages = ref([]);
         const selectedCaption = ref('');
+        const loading = ref(true);
         // Function to preload images
         const preloadImages = (images) => {
             images.slice(0, 3).forEach((img) => {
@@ -37,26 +37,32 @@ export default defineComponent({
             selectedImages.value = [];
             selectedCaption.value = '';
         }
+        onMounted(() => {
+            loading.value = false;
+        });
         return {
             selectedGroup,
             selectedImages,
             selectedCaption,
             handleSelectGallery,
-            handleBack
+            handleBack,
+            loading
         };
     }
 });
 debugger; /* PartiallyEnd: #3632/script.vue */
 const __VLS_ctx = {};
 const __VLS_componentsOption = {
-    Polaroid,
-    Header,
-    Gallery
+    Polaroid: defineAsyncComponent(() => import('./components/Polaroid.vue')),
+    Header: defineAsyncComponent(() => import('./components/Header.vue')),
+    Gallery: defineAsyncComponent(() => import('./components/Gallery.vue')),
+    HalfCircleSpinner
 };
 let __VLS_components;
 let __VLS_directives;
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({});
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({
-    ...{ class: "container mx-auto px-4 py-8 text-white" },
+    ...{ class: "container mx-auto px-4 py-8 font-hanuman" },
 });
 if (!__VLS_ctx.selectedGroup) {
     const __VLS_0 = {}.Header;
@@ -109,6 +115,6 @@ else {
 /** @type {__VLS_StyleScopedClasses['mx-auto']} */ ;
 /** @type {__VLS_StyleScopedClasses['px-4']} */ ;
 /** @type {__VLS_StyleScopedClasses['py-8']} */ ;
-/** @type {__VLS_StyleScopedClasses['text-white']} */ ;
+/** @type {__VLS_StyleScopedClasses['font-hanuman']} */ ;
 var __VLS_dollars;
 let __VLS_self;
